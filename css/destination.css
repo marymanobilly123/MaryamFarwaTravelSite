@@ -1,0 +1,156 @@
+/* destinations.css */
+
+/* General styles for the destination page */
+.destination-hero .hero {
+    background: url('../assets/images/hawaii-hero.jpg') no-repeat center center/cover;
+    height: 50vh; /
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.destination-hero .hero h1 {
+    font-size: 4rem; /* Large text for the hero title */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Itinerary Section Styling */
+.itinerary {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #f4f4f4; /* Light background for the itinerary section */
+}
+
+.itinerary-card {
+    background: white;
+    padding: 1rem;
+    width: 30%; /* Adjust the width as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+    border-radius: 5px; /* Rounded corners for the cards */
+}
+
+.itinerary-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #FF5733; /* Orange bottom border for the day titles */
+}
+
+.itinerary-card ul {
+    list-style-type: none;
+}
+
+.itinerary-card ul li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd; /* Light border for list items */
+    color: #666;
+}
+
+.itinerary-card ul li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #FF5733;
+    margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #666;
+    text-decoration: none;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+/* Responsive styling for the itinerary section on smaller screens */
+@media screen and (max-width: 768px) {
+    .itinerary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itinerary-card {
+        width: 80%;
+        margin-bottom: 2rem; /* Add some space between stacked cards */
+    }
+}
+
+/* Itinerary Section Styling */
+.itinerary {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+    background: transparent; /* Assuming there is a main background */
+}
+
+.itinerary-card {
+    background: #ffffff; /* White background for the card */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for definition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(33.333% - 2rem); /* Three cards with spacing, adjust as needed */
+    text-align: left; /* Aligns the text to the left */
+}
+
+.itinerary-card h2 {
+    font-size: 1.25rem; /* Larger font size for the day titles */
+    color: #333333; /* Darker font color for contrast */
+    margin-bottom: 0.5rem; /* Spacing below the title */
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #FF5733; /* Accent color for the bottom border of the title */
+}
+
+.itinerary-card ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+.itinerary-card ul li {
+    font-size: 1rem; /* Sets a consistent font size for list items */
+    padding: 0.5rem 0; /* Spacing above and below each list item */
+    border-bottom: 1px solid #eaeaea; /* Light border for each list item */
+}
+
+.itinerary-card ul li:last-child {
+    border-bottom: none; /* Removes the border from the last list item */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .itinerary {
+        flex-direction: column; /* Stacks the cards on top of each other */
+    }
+
+    .itinerary-card {
+        width: 100%; /* Full width cards on smaller screens */
+        margin: 1rem 0; /* Spacing above and below each card */
+    }
+}
+

@@ -1,0 +1,29 @@
+/* Reset default browser styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base font and body styles */
+body {
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Global link styles */
+a {
+  color: #335576;
+  text-decoration: none;
+}
+
+/* Image styling to ensure responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
